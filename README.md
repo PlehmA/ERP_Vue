@@ -1,4 +1,4 @@
-# my-app
+# ERP_Vue
 
 ## Project setup
 ```
