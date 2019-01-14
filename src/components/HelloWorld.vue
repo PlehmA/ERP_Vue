@@ -41,11 +41,14 @@
         </v-layout>
       </v-container>
     </v-content>
+    <Footer></Footer>
   </v-app>
 </template>
 
 <script>
+import Footer from './footer/Footer'
 const axios = require('axios');
+
   export default {
     data (){
       return {
@@ -80,10 +83,10 @@ const axios = require('axios');
           .then(function () {
             // always executed
           });
-
-          
-
       }
+    },
+    components: {
+      Footer
     }
   }
 </script>
