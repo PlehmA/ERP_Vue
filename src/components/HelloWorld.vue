@@ -69,7 +69,10 @@ const axios = require('axios');
       inicioSesion(){
          console.log('Tu usuario es: '+this.username+' y tu password es: '+this.password);
 
-         axios.get('/user?ID=12345')
+         axios.post('http://127.0.0.1:8000/api/signin', {
+           username: this.username,
+           password: this.password
+         })
           .then(function (response) {
             // handle success
             console.log(response);
